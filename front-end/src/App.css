@@ -145,16 +145,7 @@ img:hover {
 }
 
 /* Sidebar 구현 */
-.container {
-  display: flex;
-}
 
-Sidebar {
-  flex: 1;
-  flex-direction: 'row';
-}
-
-Main {
-  flex: 4;
-  flex-direction: 'row';
+p {
+  text-align: center;
 }
