@@ -103,9 +103,9 @@ img:hover {
 /* Sidebar.css */
 .sidebar {
   flex: 1;
-  height: calc(100vh);
+  height: calc(20vh);
   background-color: #F4F692;
-
+  border-bottom-right-radius:10px;
   position: sticky;
   top: 50px;
 }
@@ -145,7 +145,17 @@ img:hover {
 }
 
 /* Sidebar 구현 */
+.container {
+  display: flex;
+  flex-direction: 'row';
+  flex:1;
+}
 
-p {
-  text-align: center;
+.sd {
+  position:fixed;
+  fleX:1;
+}
+
+.ma {
+  flex:1;
 }

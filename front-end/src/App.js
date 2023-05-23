@@ -6,9 +6,11 @@ function App() {
   return (
     <div className="App">
       <div className="conatiner">
-        <Main />
-        <Sidebar />
-        <div className="others">
+        <div className="sd">
+          <Sidebar />
+        </div>
+        <div className="ma">
+          <Main />
         </div>
       </div>
     </div>
