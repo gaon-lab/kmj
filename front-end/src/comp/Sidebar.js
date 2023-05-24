@@ -24,7 +24,7 @@ function Sidebar() {
                                 <React.Fragment>
                                     <a onClick={openModal}>How to do</a>
                                     <Modal open={modalOpen} close={closeModal} header="How to do image search">
-                                        <img className="eximg" src="/image-cropping-example"></img>
+                                        <img className="eximg" src="/image-cropping-example.png"></img>
                                     </Modal>
                                 </React.Fragment>
                             </li>

@@ -262,7 +262,7 @@ img:hover:not(.eximg) {
 }
 
 .eximg {
-  width: 200px;
+  width: 400px;
   height: 160px;
   margin: 10px;
   object-fit: fill;
