@@ -2,10 +2,11 @@ import React, {useState} from 'react';
 import axios from 'axios';
 import '../App.css';
 
-function Main() {
+function Main(props) {
     const [image, setImage] = useState(null);
     const [items, setItems] = useState([]);
     const [dragging, setDragging] = useState(false);
+    let outputLimit = props.outputLimit;
 
     const handleDrop = async (e) => {
         e.preventDefault();
@@ -20,17 +21,10 @@ function Main() {
                 formData.append("filepath", dataURItoBlob(base64data), file.name);
 
                 const setting = {
-                    "cnn_model_on": false,
-                    "output_limit": 4
+                    "output_limit": outputLimit,
                 };
 
                 formData.append("setting", JSON.stringify(setting))
-
-                const config = {
-                    headers:{
-                        "Content-Type": "multipart/form-data"
-                    }
-                };
 
                 const response = await axios.post('http://210.115.229.250:5000/process_image', formData);
                 console.log(response.data);

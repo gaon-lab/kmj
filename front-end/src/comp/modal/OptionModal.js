@@ -1,7 +1,7 @@
 import React from 'react';
-import '../App.css';
+import '../../App.css';
 
-const Modal = (props) => {
+const OptionModal = (props) => {
     // 열기, 닫기, 모달 헤더 텍스트를 부모로부터 받아옴
     const { open, close, header } = props;
 
@@ -28,4 +28,4 @@ const Modal = (props) => {
     );
 };
 
-export default Modal;
+export default OptionModal;
