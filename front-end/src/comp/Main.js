@@ -20,11 +20,11 @@ function Main() {
                 formData.append("filepath", dataURItoBlob(base64data), file.name);
 
                 const setting = {
-                    "cnn_model_on": true,
-                    "output_limit": 5
+                    "cnn_model_on": false,
+                    "output_limit": 4
                 };
 
-                formData.append("setting", Json.stringify(setting))
+                formData.append("setting", JSON.stringify(setting))
 
                 const config = {
                     headers:{
@@ -32,7 +32,7 @@ function Main() {
                     }
                 };
 
-                const response = await axios.post('http://210.115.229.250:5000/process_image', formData, config);
+                const response = await axios.post('http://210.115.229.250:5000/process_image', formData);
                 console.log(response.data);
                 setItems(response.data);
             } catch (error) {
