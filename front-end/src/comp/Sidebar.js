@@ -22,6 +22,12 @@ function Sidebar(props) {
     }
 
     const handleInputChange = (e) => {
+        if(e.target.value < 0){
+            e.target.value = 0;
+        }
+        if(e.target.value > 500){
+            e.target.value = 500;
+        }
         setValue(e.target.value);
     };
 

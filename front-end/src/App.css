@@ -18,8 +18,8 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 300px;
-  height: 200px;
+  width: 500px;
+  height: 350px;
   margin: 0 auto;
   border: 2px dashed #00bfff;
   border-radius: 10px;
@@ -47,7 +47,7 @@ h1 {
 
 img:not(.eximg) {
   width: 250px;
-  height: 160px;
+  height: 230px;
   margin: 10px;
   object-fit: cover;
   border-radius: 10px;
@@ -76,6 +76,8 @@ img:hover:not(.eximg) {
 }
 
 .container {
+  display: flex;
+  justify-content: center;
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
@@ -266,4 +268,10 @@ img:hover:not(.eximg) {
   height: 160px;
   margin: 10px;
   object-fit: fill;
+}
+
+.intro-text {
+  font-style: italic;
+  font-size: 1.5rem;
+  margin: 20px 50px;
 }
