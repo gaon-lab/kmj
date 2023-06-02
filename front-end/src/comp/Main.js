@@ -64,7 +64,7 @@ function Main(props) {
                  onDragLeave={handleDragLeave}>
                 <h1 className="container">Drag and Drop Image Search</h1>
                 <div className="dropzone">
-                    <p>Drop an image here to search for similar images</p>
+                    <p>Drop an image here <br/> to search for similar images</p>
                 </div>
                 <div className="image-container">
                     {image && <img src={image} alt="Dropped Image"/>}
