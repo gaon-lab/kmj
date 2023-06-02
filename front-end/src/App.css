@@ -286,3 +286,9 @@ img:hover:not(.eximg) {
   font-size: 1.5rem;
   margin: 20px 50px;
 }
+
+.content{
+  min-width: 1280px;
+  width:1280px;
+  margin: 0 auto;
+}
