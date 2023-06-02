@@ -109,7 +109,7 @@ img:hover:not(.eximg) {
 /* Sidebar.css */
 .sidebar {
   flex: 1;
-  height: calc(100vh);
+  height: 300px;
   background-color: #F4F692;
   border-bottom-right-radius: 10px;
   position: sticky;
@@ -289,6 +289,6 @@ img:hover:not(.eximg) {
 
 .content{
   min-width: 1280px;
-  width:1280px;
+  width:80%;
   margin: 0 auto;
 }
