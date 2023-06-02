@@ -27,6 +27,7 @@ function Main(props) {
                 formData.append("setting", JSON.stringify(setting))
 
                 console.log("kmj456");
+                console.log("kmj21345");
 
                 const response = await axios.post('http://210.115.229.250:5000/process_image', formData);
                 console.log(response.data);
