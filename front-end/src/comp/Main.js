@@ -67,14 +67,14 @@ function Main(props) {
                  onDragLeave={handleDragLeave}>
                 <h1 className="container">Drag and Drop Image Search</h1>
                 <div className="dropzone">
-                    <p>Drop an image here to search for similar images</p>
+                    <p>Drop an image here <br/> to search for similar images</p>
                 </div>
                 <div className="image-container">
                     {image && <img src={image} alt="Dropped Image"/>}
                 </div>
             </div>
             <div>
-                <div>
+                <div className='content'>
                     {
                         items.length === 0 ? <div className="intro-text">안녕하세요! 저희는 패션과 관련된 폐쇄형 유사 이미지 사이트를 운영하고 있습니다.
                             현재까지 6000장의 다양한 패션 이미지셋을 보유하고 있으며, 이 중 코트, 드레스, 후드티, 맨투맨, 스웨터, 셔츠의 6개 카테고리로 구분되어 각각 1000장씩 이미지를 저장하였습니다.
