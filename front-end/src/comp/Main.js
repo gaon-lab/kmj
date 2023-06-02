@@ -26,6 +26,8 @@ function Main(props) {
 
                 formData.append("setting", JSON.stringify(setting))
 
+                console.log("kmj123");
+
                 const response = await axios.post('http://210.115.229.250:5000/process_image', formData);
                 console.log(response.data);
                 setItems(response.data);
